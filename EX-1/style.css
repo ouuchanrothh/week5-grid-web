@@ -1,4 +1,3 @@
-/* Styling only */
 body {
   margin: 0;
 }
@@ -19,49 +18,37 @@ body {
   font-size: 3em;
 }
 
-/* Layouting only  (your work)*/
-
 .wrapper {
   display: grid;
   gap: 20px;
-  
-  /* 3 columns of equal width */
   grid-template-columns: 1fr 1fr 1fr;
-  
-  /* 4 rows: Top (a), Middle Top (c,d), Middle Bottom (e), Bottom (f) */
   grid-template-rows: auto 1fr 1fr auto;
 }
 
-/* Item a: Spans all 3 columns */
 .a {
   grid-column: 1 / span 3;
 }
 
-/* Item b: Spans 2 rows vertically, sits in the first column */
 .b {
   grid-column: 1;
   grid-row: 2 / span 2;
 }
 
-/* Item c: Sits in the middle column, top row of the middle section */
 .c {
   grid-column: 2;
   grid-row: 2;
 }
 
-/* Item d: Sits in the right column, top row of the middle section */
 .d {
   grid-column: 3;
   grid-row: 2;
 }
 
-/* Item e: Spans 2 columns horizontally, sits below c and d */
 .e {
   grid-column: 2 / span 2;
   grid-row: 3;
 }
 
-/* Item f: Spans all 3 columns horizontally */
 .f {
   grid-column: 1 / span 3;
 }
